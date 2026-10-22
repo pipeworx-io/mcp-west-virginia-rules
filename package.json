@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-west-virginia-rules",
+  "version": "0.1.0",
+  "description": "West Virginia Code of State Rules (CSR) -- the state's administrative rules.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-west-virginia-rules": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "west-virginia-rules"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-west-virginia-rules.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-6e5091ff5c1247879987884e5bfa14e407cc58b20b30465e6665836846ed8271",
+    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+  }
+}
