@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-west-virginia-rules",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "West Virginia Code of State Rules (CSR) -- the state's administrative rules.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-west-virginia-rules": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "west-virginia-rules"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-west-virginia-rules.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/west-virginia-rules",
   "pipeworx": {
-    "sourceHash": "v1-6e5091ff5c1247879987884e5bfa14e407cc58b20b30465e6665836846ed8271",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "west-virginia-rules",
+    "gatewaySlug": "west-virginia-rules",
+    "sourceHash": "v1-e5f0c64fcbe07fac90acdd24bf76529492da04596bffb07047cebdfaa3d21e34",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
