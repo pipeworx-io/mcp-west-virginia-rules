@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-west-virginia-rules",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "West Virginia Code of State Rules (CSR) -- the state's administrative rules.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "west-virginia-rules",
     "gatewaySlug": "west-virginia-rules",
-    "sourceHash": "v1-e5f0c64fcbe07fac90acdd24bf76529492da04596bffb07047cebdfaa3d21e34",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-ab8c1ebc12933b7ea923fc48e40f25cd874070d5b899a552ec4580b5c6662a87",
+    "sourceCommit": "78b905fa3a6880dfb85c79150f4bffe8cf50ef00"
   }
 }
